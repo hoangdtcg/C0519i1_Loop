@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "1" placeholder="Nhap vao 1 so">
+<button onclick="factorial()" >Factorial</button>
+<script>
+    function factorial(){
+        let a = parseInt(document.getElementById("1").value);
+        let gt = 1;
+        for ( let i = 1; i <= a; i++){
+            gt *= i;
+        }
+        document.write("Giai thua cua " + a + " la : " + gt);
+    }
+</script>
+</body>
+</html>

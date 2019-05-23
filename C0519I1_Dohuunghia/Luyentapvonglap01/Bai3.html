@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "fi" placeholder="Nhap so phan tu muon in ra">
+<button onclick="fibonacci()">Display</button>
+<script>
+    function fibonacci() {
+        let a = parseInt(document.getElementById("fi").value);
+        let fibonacci = [];
+        fibonacci[0] = 0;
+        fibonacci[1] = 1;
+        for ( let i = 2; i < a; i++){
+            fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+        }
+
+        for ( let i = 0; i < a ; i++){
+            document.write(fibonacci[i] + " ");
+        }
+    }
+</script>
+</body>
+</html>
