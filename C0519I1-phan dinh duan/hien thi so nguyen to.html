@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number =parseInt(prompt("So nguyen to can in ra"));
+    let count = 0;
+        for(let i=2; ;i++){
+            if (checkSNt(i) === true){
+                count++;
+                if (count <= number) {
+                    document.write(i);
+                } else {
+                    break;
+            }
+        }
+    }
+    function checkSNt(b) {
+        for ( let i = 2 ; i < b ; i++) {
+            if ( b % i === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
