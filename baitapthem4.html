@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh lai ngan hang</title>
+</head>
+<body>
+<input id="sotienvay" type="text" placeholder="So tien ban dau" name="sotien">
+<input id="sothang" type="text" placeholder="so thang cho vay" name="so thang vay">
+<input id="laisuat" type="text" placeholder="lai suat hang thang" name="lai suat">
+<button id="tinhlai" name="TinhLai" onclick="tinhlai()">Tinh Lai</button>
+<script>
+    function tinhlai() {
+        let sotien = parseInt(document.getElementById("sotienvay").value);
+        let thang = parseInt(document.getElementById("sothang").value);
+        let lai = parseFloat(document.getElementById("laisuat").value);
+        let sotienlai;
+        for ( let i; i<= thang; i++){
+            sotienlai = sotien*lai + sotien;
+            sotien = sotienlai;
+        }
+        document.write("so tien lai phai tra la" + sotienlai);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hay thu doan xem</title>
+</head>
+<body>
+<button id="Loto" onclick="abc()" type="button">Loto</button>
+<script>
+    function abc() {
+        let a= prompt("nhap mot so bat ky");
+        let c= prompt("nhat so ban chon");
+        a = Math.round(Math.random() * a );
+        if ( a === c) {
+            alert("ban dung roi");
+        } else if ( a < c ){
+            alert("khoang be hon");
+            c= prompt("nhap lai nao");
+            if (a === c){
+                alert("ban dung roi");
+        } if ( a === c){
+            alert("ban dung roi")
+        }
+
+    }
+</script>
+</body>
+</html>
