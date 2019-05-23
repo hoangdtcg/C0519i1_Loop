@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "check" placeholder="Nhap so luong muon in ra">
+<button onclick="inSoNguyenTo()">Check</button>
+<script>
+    function check1(b) {
+        for (let i = 2; i < b; i++) {
+            if (b % i === 0) {
+                return false;
+            }
+
+        }
+        return true;
+    }
+    function inSoNguyenTo() {
+        let a = parseInt(document.getElementById("check").value);
+        let count = 0;
+        let j = 2;
+        for ( ; ; j++ ){
+            if (check1(j) === true) {
+                count ++;
+                if (count <= a){
+                    document.getElementById("check2").innerHTML += j + "  " ;
+                } else {
+                    return;
+                }
+            }
+        }
+    }
+</script>
+<p id = "check2"></p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "7">
+<button onclick="sum()">Display</button>
+<script>
+    function sum() {
+        let count = 0;
+        let mang = [];
+        let a = parseInt(document.getElementById("7").value);
+        for (let i = 0; ; i++) {
+            if (i % 7 === 0) {
+                count++;
+                if (count <= a) {
+                    mang.push(i);
+                } else {
+                    break;
+                }
+            }
+        }
+        let sum = 0;
+        for (let i = 0; i < mang.length; i++){
+            sum += mang[i];
+        }
+        document.write("Tong cua " + a + " so dau tien chia het cho 7 la : " +sum);
+    }
+</script>
+</body>
+</html>

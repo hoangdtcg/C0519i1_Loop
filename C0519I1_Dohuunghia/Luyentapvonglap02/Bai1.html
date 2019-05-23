@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="display()"> Display</button>
+<script>
+    function fibonacci(num) {
+        if (num <= 1) return num;
+
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+    function display() {
+        let n = parseInt(prompt("Nhap 1 so"));
+        for ( let i = 0; i < n; i++){
+            document.write(fibonacci(i) + " ");
+        }
+    }
+</script>
+</body>
+</html>

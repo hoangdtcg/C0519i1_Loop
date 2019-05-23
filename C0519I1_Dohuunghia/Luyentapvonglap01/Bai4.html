@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fibonacci = [];
+    fibonacci[0] = 0;
+    fibonacci[1] = 1;
+    for ( let i = 2; i < 100; i++){
+        fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+        if ( fibonacci[i] % 5 === 0){
+            document.write("Phan tu chia het cho 5 dau tien trong day fibonacci la : " + fibonacci[i]);
+            break;
+        }
+    }
+</script>
+</body>
+</html>
