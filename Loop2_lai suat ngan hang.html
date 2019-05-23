@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lai suat ngan hang</title>
+</head>
+<body>
+<input type="text" id="tiengui" placeholder="Nhap so tien">
+<input type="text" id="laisuat" placeholder="Nhap lai suat">
+<input type="text" id="sothang" placeholder="Nhap so thang"><br><br>
+<button onclick="ketqua()" type="button">Sunmit</button>
+<input type="text" id="tongtien">
+<script>
+    function ketqua() {
+        let money = parseFloat(document.getElementById("tiengui").value);
+        let mounth = parseFloat(document.getElementById("sothang").value);
+        let a = parseFloat(document.getElementById("laisuat").value);
+        let money1;
+        // khai bao bien ben trong function
+
+        for (let i = 1; i <= mounth; i++) {
+            money1 = money * a + money;
+            money = money1;
+        }
+        document.getElementById("tongtien").value += money;
+    }
+</script>
+</body>
+</html>

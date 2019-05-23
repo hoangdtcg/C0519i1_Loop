@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh giai thua</title>
+</head>
+<body>
+<input id="giaithua" type="text" placeholder="Enter a number">
+<button onclick="check()">Result</button>
+<script>
+    function check() {
+        let number = parseInt(document.getElementById("giaithua").value);
+        let result = 1;
+        for (let i =2 ; i <= number; i++) {
+            result = result * i;
+        }
+        document.write("Giai thua cua so " + number + " la: " + result);
+    }
+</script>
+</body>
+</html>

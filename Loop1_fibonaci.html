@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<input id="so" type="text" placeholder="nhap so thu n (n > 2)">
+<button type="submit" onclick="chay()">submit</button>
+<script>
+    function chay() {
+        let number1 = 0;
+        let number2 = 1;
+        let number3;
+        let total = 1;
+        let number = parseInt(document.getElementById("so").value);
+        document.write(+ number1 + ";")
+        document.write(+ number2 + ";")
+        for (i = 3; i <= number; i++) {
+            number3 = number1 + number2;
+            number1 = number2;
+            number2 = number3;
+            document.write( + number3 + "; ")
+        }
+
+    }
+
+</script>
+</body>
+</html>
