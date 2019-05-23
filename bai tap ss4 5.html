@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tim so dau tien chia het cho 5  </title>
+</head>
+<body>
+            <script>
+                    let n = prompt("nhap so bi chia , tim trong day fibonacci");
+                    let a = 0;
+                    let b = 1;
+                    let c;
+
+                    for(let i = 2; i <100000; i++){
+                        c = a + b;
+                        a = b;
+                        b = c;
+                        if(c % n == 0){
+                            document.write(c + " la so chia het trong fibonacci");
+                        }
+                    }
+            </script>
+</body>
+</html>
