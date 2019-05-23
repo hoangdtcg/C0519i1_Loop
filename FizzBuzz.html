@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+</head>
+<body>
+<h1>Cac so tu 1 den 100:</h1>
+<script>
+    let number = 1;
+    do {
+        if (number % 3 == 0 && number % 5 == 0) {
+            document.writeln(" FizzBuzz;" + "<br>");
+        } else if (number % 3 == 0) {
+            document.writeln(" Fizz;" + "<br>");
+        } else if (number % 5 == 0) {
+            document.writeln(" Buzz;" + "<br>");
+        } else
+            document.writeln(" "+ number + "; " + "<br>");
+        number++;
+    }
+    while (number <= 100);
+</script>
+</body>
+</html>

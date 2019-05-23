@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gamedemso</title>
+</head>
+<body>
+<h1>This is Game guess number</h1><br>
+<h3>It is very hard. Goddluck :))</h3>
+<button type="button" onclick="play()" id="game">Play</button>
+<script>
+    function play() {
+        let number = prompt("enter a number");
+        let n = prompt("enter your number");
+        number = Math.round(Math.random() * number);
+        if (n == number) {
+            alert("you win <3")
+        } else {
+            if (n > number) {
+            n = prompt("This number > Result. Try again.goodluck");
+            }else
+                n = prompt("This number < Result. Try again. goodluck");
+            if (n == number) {
+                alert("you win <3")
+            } else {
+                if (n > number) {
+                    n = prompt("This number > Result. Try again.goodluck");
+                }else
+                    n = prompt("This number < Result. Try again. goodluck");
+                if (n == number) {
+                    alert("you win <3")
+                } else alert("you loss :((")
+            }
+        }
+    }
+</script>
+</body>
+</html>

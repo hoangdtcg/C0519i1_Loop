@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so nguyen to</title>
+</head>
+<body>
+<input type="text" placeholder="enter a number" id="snt">
+<button onclick="check()" type="submit">submit</button>
+<script>
+    function check() {
+        let n = parseInt(document.getElementById("snt").value);
+        for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
+                alert(n + ": khong phai so nguyen to");
+                return;
+            }
+        }
+                alert(n + " :la so nguyen to");
+    }
+
+
+</script>
+</body>
+</html>
