@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n;
+    let a0 = 0;
+
+    let a1 = 1;
+    document.write(a0 + " ");
+    document.write(a1 + " ");
+
+    for (let count = 2; count < 20; count++) {
+        n = a0 + a1;
+        a0 = a1;
+        a1 = n;
+        document.write(n + " ");
+
+    }
+
+
+</script>
+</body>
+</html>

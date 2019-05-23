@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Den:
+<input id="khoang" type="text">
+<button id="start" type="button" onclick="start()"> Start</button>
+du doan:
+<input id="dudoan" type="number">
+<script>
+
+
+    function start() {
+        let a = parseInt(document.getElementById("khoang").value);
+        let ketqua= Math.round(Math.random() * a);
+        let doan = parseInt(document.getElementById("dudoan").value);
+        if (ketqua !== doan)
+            alert("random "+ ketqua + "ban hoi den,sai roi");
+        else
+            alert("random"+ ketqua + "ban gioi vl");
+    }
+
+
+</script>
+
+</body>
+</html>
