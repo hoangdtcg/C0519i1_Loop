@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> WELCOME TO MY GAME</p>
+<button onclick="Game()">click me</button>
+<script>
+    function Game() {
+        let N = parseInt(prompt("enter random big number"));
+        let M = parseInt(prompt("enter random small number"));
+        let K = parseInt(Math.random() * (M - N) + N);
+        alert("The rule is : your will choose a number and enter in a box ; if the your number is same with random number you win");
+
+        for (i = 0; i < 3; i++) {
+            let guest = parseInt(prompt("enter your number "));
+
+            if (guest === K) {
+                alert("congratulation");
+                return;
+
+            } else if (guest < K) {
+                alert("smaller");
+            } else if(guest>K) {
+                alert("bigger");
+            }
+
+        }
+    }
+</script>
+
+</body>
+</html>
