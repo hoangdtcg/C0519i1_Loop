@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> CHECK SO NGUYEN TO </p>
+<button onclick="kiemtra()"t>CLICK ME</button>
+<script>
+
+   function isSNT(N) {
+       for (let i = 2; i < N; i++) {
+           if (N % i === 0) {
+               return false;
+           }
+       }
+       return true;
+   }
+
+   function kiemtra() {
+       let N = parseInt(prompt("Nhap mot so bat ki"));
+       if (isSNT(N)) {
+           alert(N + "la so nguyen to")
+       } else {
+           alert("no");
+       }
+   }
+
+
+</script>
+</body>
+</html>
