@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    number=prompt("enter a number:")
+    let a1=0;
+    let a2=1;
+    total=1;
+    for (let count=3;count<=number;count++) {
+        n=a1+a2;
+        a1=a2;
+        a2=n;
+        total+=n;
+
+    }
+
+    document.write(total);
+
+</script>
+</body>
+</html>

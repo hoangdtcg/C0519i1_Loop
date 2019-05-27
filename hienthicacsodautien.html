@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    n = parseInt(prompt("enter a number"));
+
+    count = 1;
+    let number=2;
+
+    while (count <= n) {
+        flag = true;
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                flag = false;
+                number++;
+                break;
+            }
+
+        }
+        if (flag != false) {
+            document.write(number + " la so nguyen to thu "+count+"<br>");
+
+            count++;
+            number++;
+        }
+    }
+
+</script>
+
+</body>
+</html>
